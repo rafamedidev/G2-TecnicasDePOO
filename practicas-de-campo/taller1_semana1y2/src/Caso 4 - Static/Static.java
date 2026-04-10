@@ -1,5 +1,5 @@
 public class Contador {
-
+    
     // Variable estática que será compartida por todos los objetos
     private static int contador = 0;
 
