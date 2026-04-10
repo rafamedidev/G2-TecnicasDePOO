@@ -22,5 +22,5 @@ public class Persona {
 
         p1.mostrarDatos();
         p2.mostrarDatos();
-}
+    }
 }
