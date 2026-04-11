@@ -25,6 +25,7 @@ Repositorio del grupo 2 para el curso de Técnicas de Programación Orientada a 
 - Elvis Lenin Zamudio Lopez
 - Patrick Flores Angulo
 - Nestor Jairo Ayrton Silva Sotelo
+- Hector Luis Huamani Ramos
 
 ## ⚙️ Tecnologías utilizadas
 
