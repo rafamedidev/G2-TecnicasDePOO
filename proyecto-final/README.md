@@ -11,39 +11,11 @@ Además, no existe un control adecuado sobre la información clínica ni herrami
 ---
 
 ## 🧠 - Análisis del problema - Método Ishikawa
+Se incorpora diagrama de causa-efecto que permite visualizar las principales causas del problema identificado.
 
-**Problema principal:**  
-🚨 **Errores, retrasos y mala atención al paciente**
-
-### 👥 Personas
-- Falta de capacitación  
-- Errores humanos  
-- Resistencia al cambio  
-
-### ⚙️ Procesos
-- Registros manuales  
-- Duplicidad de tareas  
-- Flujo de trabajo ineficiente  
-
-### 💻 Tecnología
-- Sistema inestable  
-- Fallas técnicas  
-- Falta de integración  
-
-### 🌎 Entorno
-- Alta demanda de pacientes  
-- Sobrecarga laboral  
-- Recursos limitados  
-
-### 🧩 Gestión
-- Falta de control  
-- Mala planificación  
-- Decisiones sin datos  
-
-### 📊 Información
-- Datos incompletos  
-- Información desactualizada  
-- Falta de trazabilidad  
+<p align="center">
+  <img src="images/ishikawa.png" alt="Diagrama de Ishikawa" width="800"/>
+</p> 
 
 ---
 
