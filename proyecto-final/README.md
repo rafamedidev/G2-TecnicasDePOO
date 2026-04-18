@@ -58,6 +58,13 @@ Permite una implementación rápida, pero tiene alto costo y baja flexibilidad.
 ### ✅ Alternativa 3: Desarrollar un sistema propio (Elegida)  
 Permite adaptar el sistema a las necesidades del hospital y escalarlo en el tiempo.
 
+#### 📊 Sustento de la Alternativa Elegida
+| Criterio | Alt 1: Mejora Sistema Actual | Alt 2: Software Externo (SaaS) | Alt 3: Desarrollo Propio |
+| :--- | :--- | :--- | :--- |
+| **Control de Datos** | Alto | Bajo (Terceros) | **Total (Soberanía)** |
+| **Costo a largo plazo** | Bajo | Alto (Mensualidades) | **Bajo (Mantenimiento)** |
+| **Personalización** | Nula | Limitada | **Total (A medida)** |
+
 ---
 
 ## 🎯 - Definir objetivos y alcance
@@ -123,23 +130,23 @@ RF40: El sistema permitirá futuras integraciones con otros sistemas.
 
 ### 🛡️ Requerimientos No Funcionales (RNF)
 
-RNF1: Seguridad: El sistema deberá contar con autenticación y control de roles.  
+RNF1: Seguridad: Implementación de **RBAC** (Control de Acceso Basado en Roles) y cumplimiento con la **Ley N° 29733** de Protección de Datos Personales.  
 RNF2: Integridad: Se garantizará la consistencia de los datos.  
 RNF3: Usabilidad: Interfaz intuitiva con operaciones rápidas.  
-RNF4: Disponibilidad: 95% de disponibilidad durante horario operativo.  
-RNF5: Rendimiento: Respuesta menor a 3 segundos.  
+RNF4: Disponibilidad: El sistema debe garantizar un **99.5% de tiempo de actividad** (Uptime) durante el horario operativo del hospital.  
+RNF5: Rendimiento: El tiempo de respuesta para consultas de búsqueda de pacientes no debe exceder los **2 segundos**.  
 
 ---
 
 ## 👤 - Redactar historias de usuario
-
-HU1: Como recepcionista, quiero registrar pacientes rápidamente para reducir tiempos de espera.  
+El mapa de camas debe actualizarse automáticamente a 'Disponible' en el momento exacto en que se registra el Alta Médica del paciente.
+HU1: El sistema debe validar que el DNI sea único y de 8 dígitos. No debe permitir campos vacíos en Nombres o Apellidos.  
 
 HU2: Como médico, quiero acceder al historial clínico para mejorar el diagnóstico.  
 
 HU3: Como administrador, quiero gestionar usuarios para garantizar la seguridad.  
 
-HU4: Como personal de atención, quiero asignar camas para organizar la hospitalización.  
+HU4: El mapa de camas debe actualizarse automáticamente a 'Disponible' en el momento exacto en que se registra el Alta Médica del paciente. 
 
 HU5: Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
 
