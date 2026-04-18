@@ -14,7 +14,7 @@ Además, no existe un control adecuado sobre la información clínica ni herrami
 Se incorpora diagrama de causa-efecto que permite visualizar las principales causas del problema identificado.
 
 <p align="center">
-  <img src="images/ishikawa.png" alt="Diagrama de Ishikawa" width="800"/>
+  <img src="images/Ishikawa.png" alt="Diagrama de Ishikawa" width="800"/>
 </p> 
 
 ---
