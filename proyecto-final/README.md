@@ -117,17 +117,17 @@ RF26: El sistema permitirá generar alertas médicas relevantes.
 RF27: El sistema permitirá consultar el historial completo del paciente.  
 RF28: El sistema mostrará un panel (dashboard) con información resumida.  
 RF29: El sistema permitirá visualizar estadísticas del sistema.  
-RF30: El sistema realizará copias de seguridad automáticas.  
+RF30: El sistema realizará gestionar el estado de las citas médicas
 RF31: El sistema permitirá restaurar información desde backups.  
 RF32: El sistema permitirá gestionar sesiones activas de usuarios.  
-RF33: El sistema contará con una interfaz fácil de usar.  
+RF33: El sistema permitirá registrar diagnósticos asociados a cada historia clínica del paciente.
 RF34: El sistema validará los datos ingresados por el usuario.  
 RF35: El sistema manejará errores de forma controlada.  
-RF36: El sistema permitirá el acceso simultáneo de múltiples usuarios.  
+RF36: El sistema permitirá validar la disponibilidad de médicos.
 RF37: El sistema permitirá accesos rápidos a funciones frecuentes.  
 RF38: El sistema permitirá aplicar filtros avanzados en consultas.  
 RF39: El sistema permitirá ordenar la información mostrada.  
-RF40: El sistema permitirá futuras integraciones con otros sistemas.  
+RF40: El sistema permitirá registrar la fecha y hora de inicio y fin de cada atención médica.  
 
 ---
 
@@ -137,24 +137,24 @@ RNF1: Seguridad: Implementación de **RBAC** (Control de Acceso Basado en Roles)
 RNF2: Integridad: Se garantizará la consistencia de los datos.  
 RNF3: Usabilidad: Interfaz intuitiva con operaciones rápidas.  
 RNF4: Disponibilidad: El sistema debe garantizar un **99.5% de tiempo de actividad** (Uptime) durante el horario operativo del hospital.  
-RNF5: Rendimiento: El tiempo de respuesta para consultas de búsqueda de pacientes no debe exceder los **2 segundos**. 
+RNF5: Rendimiento: El tiempo de respuesta para consultas de búsqueda de pacientes no debe exceder los **2 segundos**.  
 RNF6: Escalabilidad: Poder complementar con sistemas de terceros y mejor la interconectividad.
 
 ---
 
 ## 👤 - Redactar historias de usuario
-El mapa de camas debe actualizarse automáticamente a 'Disponible' en el momento exacto en que se registra el Alta Médica del paciente.
-HU1: El sistema debe validar que el DNI sea único y de 8 dígitos. No debe permitir campos vacíos en Nombres o Apellidos.  
+
+HU1: Como personal administrativo, quiero que el sistema valide el DNI y los campos obligatorios para evitar registros incorrectos.
 
 HU2: Como médico, quiero acceder al historial clínico para mejorar el diagnóstico.  
 
 HU3: Como administrador, quiero gestionar usuarios para garantizar la seguridad.  
 
-HU4: El mapa de camas debe actualizarse automáticamente a 'Disponible' en el momento exacto en que se registra el Alta Médica del paciente. 
+HU4: Como personal administrativo, quiero que el estado de las camas se actualice automáticamente al registrar el alta médica, para mantener la disponibilidad de camas actualizada.
 
 HU5: Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
 
-HU6: Como sistema, quiero validar datos para evitar errores en la información.  
+HU6: Como personal administrativo, quiero que el sistema valide los datos ingresados para evitar errores en la información.  
 
 HU7: Como médico, quiero registrar tratamientos para hacer seguimiento del paciente.  
 
