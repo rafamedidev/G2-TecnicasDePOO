@@ -29,13 +29,13 @@ Por otro lado, estudios recientes evidencian que aún persisten prácticas manua
 
 **Referencias:**
 
-**Kawak. (2023).** *Gestión documental para el sector salud, facilita tus procesos.* 
+**Kawak. (2023).** *Gestión documental para el sector salud, facilita tus procesos.*  
 🔗 https://blog.kawak.net/es-mx/mejorando_sistemas_de_gestion_iso/gestion-documental-sector-salud  
 
-**Ticportal. (2023).** *La elección de un sistema de gestión documental en el sector sanitario.*
+**Ticportal. (2023).** *La elección de un sistema de gestión documental en el sector sanitario.*  
 🔗 https://www.ticportal.es/temas/sistema-gestion-documental/gestion-documental-sectores/dms-sanitaria  
 
-**Polo del Conocimiento. (2025).** *TIC para la gestión documental en el área de estadística del Hospital Rafael Ruiz del Cantón Pujilí.*
+**Polo del Conocimiento. (2025).** *TIC para la gestión documental en el área de estadística del Hospital Rafael Ruiz del Cantón Pujilí.*  
 🔗 https://polodelconocimiento.com/ojs/index.php/es/article/download/9865/pdf  
 
 ---
