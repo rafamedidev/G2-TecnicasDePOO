@@ -21,17 +21,21 @@ Se incorpora diagrama de causa-efecto que permite visualizar las principales cau
 
 ## 📚 - Documentación de antecedentes (Formato APA)
 
-La digitalización en el sector salud ha demostrado ser clave para mejorar la eficiencia y reducir errores en los procesos hospitalarios.
+La digitalización en el sector salud ha demostrado ser fundamental para mejorar la eficiencia y reducir errores en los procesos hospitalarios. En este contexto, la gestión documental permite optimizar el acceso a la información, incrementar la seguridad de los datos y mejorar la productividad del personal (Kawak, 2023).
 
-📖 **Kawak. (2023).** *Gestión documental para el sector salud, facilita tus procesos.*  
+Asimismo, en el ámbito sanitario, el crecimiento de la documentación clínica ha generado la necesidad de implementar sistemas que garanticen el control de versiones, niveles de acceso y trazabilidad de la información (Ticportal, 2023).
+
+Por otro lado, estudios recientes evidencian que aún persisten prácticas manuales en algunos centros de salud, lo que ralentiza la generación de reportes y dificulta el acceso oportuno a la información (Polo del Conocimiento, 2025).
+
+**Kawak. (2023).** *Gestión documental para el sector salud, facilita tus procesos.*  
 La gestión documental en salud busca reducir el papeleo y mejorar el acceso inmediato a la información, la seguridad de los datos y la productividad del personal.  
 🔗 https://blog.kawak.net/es-mx/mejorando_sistemas_de_gestion_iso/gestion-documental-sector-salud  
 
-📖 **Ticportal. (2023).** *La elección de un sistema de gestión documental en el sector sanitario.*  
+**Ticportal. (2023).** *La elección de un sistema de gestión documental en el sector sanitario.*  
 En el sector sanitario, el crecimiento de la documentación clínica exige control de versiones, niveles de acceso y trazabilidad.  
 🔗 https://www.ticportal.es/temas/sistema-gestion-documental/gestion-documental-sectores/dms-sanitaria  
 
-📖 **Polo del Conocimiento. (2025).** *TIC para la gestión documental en el área de estadística del Hospital Rafael Ruiz del Cantón Pujilí.*  
+**Polo del Conocimiento. (2025).** *TIC para la gestión documental en el área de estadística del Hospital Rafael Ruiz del Cantón Pujilí.*  
 El estudio evidencia que persisten prácticas manuales que ralentizan la generación de reportes y dificultan el acceso oportuno a la información.  
 🔗 https://polodelconocimiento.com/ojs/index.php/es/article/download/9865/pdf  
 
