@@ -161,3 +161,27 @@ HU7: Como médico, quiero registrar tratamientos para hacer seguimiento del paci
 HU8: Como administrador, quiero visualizar reportes para tomar decisiones informadas.  
 
 ---
+
+## 📈 - Indicadores de Éxito
+| Indicador | Meta |
+| :--- | :--- |
+| ⏳ **Reducción del tiempo de admisión** | 40% menos respecto al proceso manual |
+| 📝 **Disminución de errores en registros clínicos** | 60% menos gracias a validaciones automáticas |
+| 😀 **Incremento en la satisfacción del paciente** | 30% más, medido mediante encuestas internas |
+| 📊 **Generación de reportes** | Menos de 1 minuto por reporte |
+| 🌐 **Disponibilidad del sistema** | Superior al 99.5% |
+| 🔒 **Cumplimiento normativo en protección de datos** | Total cumplimiento con Ley N° 29733 |
+
+---
+
+## 🧩 - Plan de Implementación
+| Fase | Actividades |
+| :--- | :--- |
+| 📌 **Fase 1 – Análisis y Diseño** | Levantamiento de requerimientos, modelado de base de datos, definición de arquitectura |
+| 📌 **Fase 2 – Desarrollo** | Construcción de módulos principales (pacientes, médicos, citas, hospitalización), implementación de seguridad y roles |
+| 📌 **Fase 3 – Pruebas Piloto** | Validación en un área del hospital, corrección de errores y ajustes |
+| 📌 **Fase 4 – Capacitación** | Entrenamiento del personal administrativo y médico, elaboración de manuales y guías rápidas |
+| 📌 **Fase 5 – Implementación Total** | Despliegue en todas las áreas del hospital, monitoreo inicial para asegurar estabilidad |
+| 📌 **Fase 6 – Mantenimiento y Mejora Continua** | Actualizaciones periódicas, integración futura con telemedicina, laboratorios y aseguradoras |
+
+---
