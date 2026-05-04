@@ -154,11 +154,35 @@ HU4: Como personal administrativo, quiero que el estado de las camas se actualic
 
 HU5: Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
 
-HU6: Como personal administrativo, quiero que el sistema valide los datos ingresados para evitar errores en la información.  
+HU6: Como personal administrativo, quiero agendar, reprogramar o cancelar citas médicas para organizar la atención de los pacientes.  
 
-HU7: Como médico, quiero registrar tratamientos para hacer seguimiento del paciente.  
+HU7: Como médico, quiero registrar diagnósticos y tratamientos detallados para hacer seguimiento de la evolución del paciente.  
 
-HU8: Como administrador, quiero visualizar reportes para tomar decisiones informadas.  
+HU8: Como administrador, quiero visualizar reportes operativos para tomar decisiones informadas sobre la gestión del hospital.  
+
+HU9: Como personal administrativo, quiero buscar pacientes por DNI o nombre, para agilizar la atención y evitar registros duplicados.
+
+HU10: Como médico, quiero asignar una especialidad a mi perfil, para que el sistema me asigne citas acordes a mi área médica.
+
+HU11: Como personal administrativo, quiero registrar y asignar una cama específica a un paciente hospitalizado, para llevar un control exacto de la ocupación en tiempo real.
+
+HU12: Como médico, quiero registrar el alta médica del paciente, para que el sistema genere automáticamente el resumen de salida y libere los recursos.
+
+HU13: Como personal de enfermería, quiero registrar la transferencia de un paciente entre áreas (ej. de Emergencia a UCI), para que su ubicación física siempre sea exacta en el sistema.
+
+HU14: Como administrador, quiero exportar reportes operativos en formato PDF o Excel, para compartirlos con la gerencia del hospital.
+
+HU15: Como auditor, quiero visualizar un registro de actividades (logs), para rastrear qué usuario realizó cambios o eliminaciones en datos sensibles.
+
+HU16: Como administrador, quiero definir roles y permisos (médico, administrativo, enfermería), para que cada usuario acceda únicamente a las funciones que le corresponden.
+
+HU17: Como médico, quiero recibir alertas visuales sobre alergias o diagnósticos críticos al abrir una historia clínica, para evitar errores en la medicación.
+
+HU18: Como director del hospital, quiero visualizar un Dashboard con estadísticas de citas y ocupación de camas, para tomar decisiones estratégicas basadas en datos.
+
+HU19: Como personal de soporte, quiero realizar y restaurar copias de seguridad (backups), para garantizar que la información no se pierda ante fallos técnicos.
+
+HU20: Como médico, quiero registrar la fecha y hora exacta de inicio y fin de cada atención, para medir los tiempos de espera y mejorar la eficiencia del servicio.
 
 ---
 
