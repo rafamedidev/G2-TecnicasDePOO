@@ -89,116 +89,39 @@ Desarrollar un sistema de gestión hospitalaria que permita automatizar los proc
 ### 🔧 Requerimientos Funcionales (RF)
 
 RF1: El sistema permitirá registrar pacientes con información completa y validada.  
-Criterios de aceptación:
-* El sistema deberá solicitar nombre, DNI y edad obligatoriamente.
-* No se permitirá registrar pacientes con DNI repetido.
-* El sistema mostrará un mensaje confirmando el registro exitoso.
-  
-RF2: El sistema permitirá actualizar los datos personales del paciente.  
-Criterios de aceptación:
-* El sistema deberá permitir modificar los datos de un paciente ya registrado.
-* Los cambios deberán guardarse correctamente.
-* El sistema mostrará un mensaje de actualización exitosa.
-  
+RF2: El sistema permitirá actualizar los datos personales del paciente.
 RF3: El sistema permitirá eliminar registros de pacientes bajo condiciones controladas.  
-
 RF4: El sistema permitirá realizar búsquedas de pacientes mediante DNI u otros criterios.  
-Criterios de aceptación:
-* El sistema deberá permitir buscar pacientes por DNI.
-* Si el paciente existe, deberá mostrar su información.
-* Si no existe, deberá mostrarse un mensaje indicando que no fue encontrado.
-
 RF5: El sistema permitirá registrar médicos en la plataforma.  
-Criterios de aceptación:
-* El sistema deberá permitir registrar nombre y especialidad del médico.
-* No se permitirá registrar médicos con campos vacíos.
-* El sistema confirmará el registro correctamente.
-
 RF6: El sistema permitirá asignar especialidades a cada médico.  
-
-RF7: El sistema permitirá crear historias clínicas por paciente.  
-Criterios de aceptación:
-* Cada paciente deberá poder tener una historia clínica asociada.
-* La historia clínica deberá guardar diagnóstico y observaciones.
-* El sistema deberá permitir consultar la información registrada.
-
+RF7: El sistema permitirá crear historias clínicas por paciente.
 RF8: El sistema permitirá actualizar la información de la historia clínica.  
-
 RF9: El sistema permitirá agendar citas médicas.  
-Criterios de aceptación:
-* El sistema deberá permitir seleccionar paciente, médico y fecha.
-* No se deberá registrar una cita con campos vacíos.
-*El sistema mostrará confirmación al registrar la cita.
-
 RF10: El sistema permitirá reprogramar citas existentes.  
-Criterios de aceptación:
-* El sistema deberá permitir cambiar fecha u hora de una cita existente.
-* La nueva fecha deberá guardarse correctamente.
-* El sistema deberá mostrar mensaje de actualización exitosa.
-
 RF11: El sistema permitirá cancelar citas registradas.  
-Criterios de aceptación:
-* El sistema deberá permitir cancelar citas registradas.
-* La cita cancelada deberá cambiar su estado.
-* El sistema mostrará confirmación de cancelación.
-
 RF12: El sistema permitirá registrar procesos de hospitalización.  
 RF13: El sistema permitirá asignar camas disponibles a pacientes.  
 RF14: El sistema permitirá transferir pacientes entre áreas o servicios.  
 RF15: El sistema permitirá registrar el alta médica del paciente.  
 RF16: El sistema permitirá generar reportes operativos.  
 RF17: El sistema permitirá exportar o imprimir listados.  
-
 RF18: El sistema permitirá administrar usuarios del sistema.  
-Criterios de aceptación:
-* El administrador deberá poder registrar nuevos usuarios.
-* El sistema deberá permitir eliminar usuarios existentes.
-* Cada usuario deberá tener un rol asignado.
-
 RF19: El sistema permitirá autenticación mediante inicio de sesión seguro.  
-Criterios de aceptación:
-* El sistema deberá solicitar usuario y contraseña.
-* Solo usuarios registrados podrán ingresar.
-* Si las credenciales son incorrectas, deberá mostrarse un mensaje de error.
-
 RF20: El sistema permitirá cambiar la contraseña de usuario.  
-Criterios de aceptación:
-* El usuario deberá ingresar su contraseña actual.
-* La nueva contraseña deberá guardarse correctamente.
-* El sistema mostrará confirmación del cambio realizado.
-
 RF21: El sistema permitirá registrar actividades para auditoría.  
 RF22: El sistema permitirá gestionar roles y permisos.  
 RF23: El sistema permitirá exportar información en diferentes formatos.  
 RF24: El sistema permitirá importar datos al sistema.  
-
 RF25: El sistema permitirá enviar notificaciones a usuarios.  
-Criterios de aceptación:
-* El sistema deberá mostrar mensajes cuando una acción sea exitosa.
-* El usuario deberá visualizar alertas básicas del sistema.
-* Las notificaciones deberán mostrarse en pantalla.
-
 RF26: El sistema permitirá generar alertas médicas relevantes.  
 RF27: El sistema permitirá consultar el historial completo del paciente.  
-
 RF28: El sistema mostrará un panel (dashboard) con información resumida.  
-Criterios de aceptación:
-* El sistema deberá mostrar cantidad de pacientes registrados.
-* El sistema deberá mostrar cantidad de citas registradas.
-* La información deberá actualizarse automáticamente al ingresar nuevos datos.
-
 RF29: El sistema permitirá visualizar estadísticas del sistema.  
 RF30: El sistema realizará gestionar el estado de las citas médicas
 RF31: El sistema permitirá restaurar información desde backups.  
 RF32: El sistema permitirá gestionar sesiones activas de usuarios.  
 RF33: El sistema permitirá registrar diagnósticos asociados a cada historia clínica del paciente.
-
 RF34: El sistema validará los datos ingresados por el usuario.  
-Criterios de aceptación:
-* El sistema no deberá permitir campos vacíos.
-* El DNI deberá contener únicamente números.
-* El sistema deberá mostrar mensajes cuando exista un error de ingreso.
-  
 RF35: El sistema manejará errores de forma controlada.  
 RF36: El sistema permitirá validar la disponibilidad de médicos.
 RF37: El sistema permitirá accesos rápidos a funciones frecuentes.  
@@ -222,28 +145,60 @@ RNF6: Escalabilidad: Poder complementar con sistemas de terceros y mejor la inte
 ## 👤 - Redactar historias de usuario
 
 HU1: Como personal administrativo, quiero que el sistema valide el DNI y los campos obligatorios para evitar registros incorrectos.
+Criterios de aceptación:
+* El sistema deberá solicitar nombre, DNI y edad obligatoriamente.
+* No se permitirá registrar pacientes con DNI repetido.
+* El sistema mostrará un mensaje confirmando el registro exitoso.
 
 HU2: Como médico, quiero acceder al historial clínico para mejorar el diagnóstico.  
+Criterios de aceptación:
+* El médico deberá poder buscar pacientes por DNI o nombre.
+* El sistema deberá mostrar el historial clínico registrado.
+* Solo usuarios autorizados podrán acceder a esta información.
 
 HU3: Como administrador, quiero gestionar usuarios para garantizar la seguridad.  
+Criterios de aceptación:
+* El administrador deberá poder registrar nuevos usuarios.
+* El sistema deberá permitir asignar roles.
+* El administrador podrá desactivar usuarios existentes.
 
 HU4: Como personal administrativo, quiero que el estado de las camas se actualice automáticamente al registrar el alta médica, para mantener la disponibilidad de camas actualizada.
 
 HU5: Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
+Criterios de aceptación:
+* El usuario deberá ingresar su contraseña actual.
+* La nueva contraseña deberá guardarse correctamente.
+* El sistema mostrará confirmación del cambio realizado.
 
 HU6: Como personal administrativo, quiero agendar, reprogramar o cancelar citas médicas para organizar la atención de los pacientes.  
+Criterios de aceptación:
+* El sistema deberá permitir registrar una cita con fecha y médico.
+* El usuario podrá modificar la fecha de una cita existente.
+* El sistema deberá permitir cancelar citas registradas.
 
 HU7: Como médico, quiero registrar diagnósticos y tratamientos detallados para hacer seguimiento de la evolución del paciente.  
 
 HU8: Como administrador, quiero visualizar reportes operativos para tomar decisiones informadas sobre la gestión del hospital.  
 
 HU9: Como personal administrativo, quiero buscar pacientes por DNI o nombre, para agilizar la atención y evitar registros duplicados.
+Criterios de aceptación:
+* El sistema deberá permitir búsquedas por DNI.
+* El sistema deberá permitir búsquedas por nombre.
+* Si no existe el paciente, deberá mostrarse un mensaje informativo.
 
 HU10: Como médico, quiero asignar una especialidad a mi perfil, para que el sistema me asigne citas acordes a mi área médica.
+Criterios de aceptación:
+* El sistema deberá permitir seleccionar una especialidad.
+* La especialidad deberá quedar registrada en el perfil.
+* El médico podrá visualizar su especialidad asignada.
 
 HU11: Como personal administrativo, quiero registrar y asignar una cama específica a un paciente hospitalizado, para llevar un control exacto de la ocupación en tiempo real.
 
 HU12: Como médico, quiero registrar el alta médica del paciente, para que el sistema genere automáticamente el resumen de salida y libere los recursos.
+Criterios de aceptación:
+* El médico deberá poder registrar el alta médica del paciente.
+* El sistema deberá actualizar el estado del paciente.
+* El sistema deberá guardar la fecha y el diagnóstico final del paciente.
 
 HU13: Como personal de enfermería, quiero registrar la transferencia de un paciente entre áreas (ej. de Emergencia a UCI), para que su ubicación física siempre sea exacta en el sistema.
 
@@ -260,6 +215,10 @@ HU18: Como director del hospital, quiero visualizar un Dashboard con estadístic
 HU19: Como personal de soporte, quiero realizar y restaurar copias de seguridad (backups), para garantizar que la información no se pierda ante fallos técnicos.
 
 HU20: Como médico, quiero registrar la fecha y hora exacta de inicio y fin de cada atención, para medir los tiempos de espera y mejorar la eficiencia del servicio.
+Criterios de aceptación:
+* El sistema deberá permitir registrar la hora de inicio y fin de atención.
+* La información deberá guardarse correctamente en el historial.
+* El sistema deberá mostrar la duración total de la atención.
 
 ---
 
