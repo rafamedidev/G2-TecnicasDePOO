@@ -215,6 +215,92 @@ Criterios de aceptación:
 * El sistema deberá enviar una notificación cuando una cita sea reprogramada o cancelada.
 * El sistema deberá mostrar un mensaje confirmando el envío de la notificación.
 
+
+
+- **HU1:** Como usuario, quiero iniciar sesión con mi usuario y contraseña, para acceder de forma segura al sistema.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá solicitar usuario y contraseña obligatoriamente.  
+  - Solo se permitirá el acceso con credenciales válidas.  
+  - El sistema deberá mostrar un mensaje si los datos ingresados son incorrectos.  
+  - Al iniciar sesión correctamente, el sistema mostrará el menú principal.  
+
+- **HU2:** Como administrador, quiero gestionar usuarios para garantizar la seguridad.  
+
+  **Criterios de aceptación:**  
+  - El administrador deberá poder registrar nuevos usuarios.  
+  - El sistema deberá permitir asignar roles.  
+  - El administrador podrá desactivar usuarios existentes.  
+
+- **HU3:** Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
+
+  **Criterios de aceptación:**  
+  - El usuario deberá ingresar su contraseña actual.  
+  - La nueva contraseña deberá guardarse correctamente.  
+  - El sistema mostrará confirmación del cambio realizado.  
+
+- **HU4:** Como personal administrativo, quiero que el sistema valide el DNI, los campos obligatorios y el correo electrónico del paciente, para evitar registros incorrectos y permitir el envío de notificaciones importantes.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá solicitar nombre, DNI, edad y correo electrónico de forma obligatoria.  
+  - No se permitirá registrar pacientes con DNI repetido.  
+  - El correo electrónico deberá tener un formato válido.  
+  - El sistema mostrará un mensaje confirmando el registro exitoso.  
+  - El sistema deberá guardar el correo electrónico para futuras notificaciones.  
+
+- **HU5:** Como personal administrativo, quiero buscar pacientes por DNI o nombre, para agilizar la atención y evitar registros duplicados.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá permitir búsquedas por DNI.  
+  - El sistema deberá permitir búsquedas por nombre.  
+  - Si no existe el paciente, deberá mostrarse un mensaje informativo.  
+
+- **HU6:** Como administrador, quiero asignar una especialidad al perfil del médico, para organizar correctamente la atención médica.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá permitir seleccionar una especialidad.  
+  - La especialidad deberá quedar registrada en el perfil del médico.  
+  - El médico podrá visualizar su especialidad asignada.  
+
+- **HU7:** Como personal administrativo, quiero agendar, reprogramar o cancelar citas médicas, para organizar la atención de los pacientes.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá permitir registrar una cita con fecha y médico.  
+  - El usuario podrá modificar la fecha de una cita existente.  
+  - El sistema deberá permitir cancelar citas registradas.  
+
+- **HU8:** Como médico, quiero acceder al historial clínico del paciente, para mejorar el diagnóstico.  
+
+  **Criterios de aceptación:**  
+  - El médico deberá poder seleccionar un paciente registrado.  
+  - El sistema deberá mostrar el historial clínico registrado.  
+  - Solo usuarios autorizados podrán acceder a esta información.  
+
+- **HU9:** Como médico, quiero registrar la fecha y hora exacta de inicio y fin de cada atención, para medir los tiempos de espera y mejorar la eficiencia del servicio.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá permitir registrar la hora de inicio y fin de atención.  
+  - La información deberá guardarse correctamente.  
+  - El sistema deberá mostrar la duración total de la atención.  
+
+- **HU10:** Como médico, quiero registrar el alta médica del paciente, para que el sistema genere automáticamente el resumen de salida y libere los recursos.  
+
+  **Criterios de aceptación:**  
+  - El médico deberá poder registrar el alta médica del paciente.  
+  - El sistema deberá actualizar el estado del paciente.  
+  - El sistema deberá guardar la fecha y el diagnóstico final del paciente.  
+  - El sistema deberá generar un resumen básico de salida.  
+
+- **HU11:** Como paciente, quiero recibir notificaciones en mi correo electrónico sobre mis citas médicas, para estar informado de mis registros, cambios o cancelaciones realizadas.  
+
+  **Criterios de aceptación:**  
+  - El sistema deberá utilizar el correo electrónico registrado del paciente.  
+  - El sistema deberá enviar una notificación al registrar una nueva cita.  
+  - El sistema deberá enviar una notificación cuando una cita sea reprogramada o cancelada.  
+  - El sistema deberá mostrar un mensaje confirmando el envío de la notificación.  
+
+
+
 ---
 
 ## 📈 - Indicadores de Éxito
