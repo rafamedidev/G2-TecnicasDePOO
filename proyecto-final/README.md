@@ -144,11 +144,13 @@ RNF6: Escalabilidad: Poder complementar con sistemas de terceros y mejor la inte
 
 ## 👤 - Redactar historias de usuario
 
-HU1: Como personal administrativo, quiero que el sistema valide el DNI y los campos obligatorios para evitar registros incorrectos.
+HU1: Como personal administrativo, quiero que el sistema valide el DNI, los campos obligatorios y el correo electrónico del paciente, para evitar registros incorrectos y permitir el envío de notificaciones importantes.
 Criterios de aceptación:
-* El sistema deberá solicitar nombre, DNI y edad obligatoriamente.
+* El sistema deberá solicitar nombre, DNI, edad y correo electrónico de forma obligatoria.
 * No se permitirá registrar pacientes con DNI repetido.
+* El correo electrónico deberá tener un formato válido (ejemplo: usuario@dominio.com).
 * El sistema mostrará un mensaje confirmando el registro exitoso.
+* El sistema deberá guardar el correo electrónico para futuras notificaciones.
 
 HU2: Como médico, quiero acceder al historial clínico para mejorar el diagnóstico.  
 Criterios de aceptación:
