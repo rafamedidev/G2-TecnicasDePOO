@@ -88,46 +88,46 @@ Desarrollar un sistema de gestión hospitalaria que permita automatizar los proc
 
 ### 🔧 Requerimientos Funcionales (RF)
 
-RF1: El sistema permitirá registrar pacientes con información completa y validada.  
-RF2: El sistema permitirá actualizar los datos personales del paciente.
-RF3: El sistema permitirá eliminar registros de pacientes bajo condiciones controladas.  
-RF4: El sistema permitirá realizar búsquedas de pacientes mediante DNI u otros criterios.  
-RF5: El sistema permitirá registrar médicos en la plataforma.  
-RF6: El sistema permitirá asignar especialidades a cada médico.  
-RF7: El sistema permitirá crear historias clínicas por paciente.
-RF8: El sistema permitirá actualizar la información de la historia clínica.  
-RF9: El sistema permitirá agendar citas médicas.  
-RF10: El sistema permitirá reprogramar citas existentes.  
-RF11: El sistema permitirá cancelar citas registradas.  
-RF12: El sistema permitirá registrar procesos de hospitalización.  
-RF13: El sistema permitirá asignar camas disponibles a pacientes.  
-RF14: El sistema permitirá transferir pacientes entre áreas o servicios.  
-RF15: El sistema permitirá registrar el alta médica del paciente.  
-RF16: El sistema permitirá generar reportes operativos.  
-RF17: El sistema permitirá exportar o imprimir listados.  
-RF18: El sistema permitirá administrar usuarios del sistema.  
-RF19: El sistema permitirá autenticación mediante inicio de sesión seguro.  
-RF20: El sistema permitirá cambiar la contraseña de usuario.  
-RF21: El sistema permitirá registrar actividades para auditoría.  
-RF22: El sistema permitirá gestionar roles y permisos.  
-RF23: El sistema permitirá exportar información en diferentes formatos.  
-RF24: El sistema permitirá importar datos al sistema.  
-RF25: El sistema permitirá enviar notificaciones a usuarios.  
-RF26: El sistema permitirá generar alertas médicas relevantes.  
-RF27: El sistema permitirá consultar el historial completo del paciente.  
-RF28: El sistema mostrará un panel (dashboard) con información resumida.  
-RF29: El sistema permitirá visualizar estadísticas del sistema.  
-RF30: El sistema realizará gestionar el estado de las citas médicas
-RF31: El sistema permitirá restaurar información desde backups.  
-RF32: El sistema permitirá gestionar sesiones activas de usuarios.  
-RF33: El sistema permitirá registrar diagnósticos asociados a cada historia clínica del paciente.
-RF34: El sistema validará los datos ingresados por el usuario.  
-RF35: El sistema manejará errores de forma controlada.  
-RF36: El sistema permitirá validar la disponibilidad de médicos.
-RF37: El sistema permitirá accesos rápidos a funciones frecuentes.  
-RF38: El sistema permitirá aplicar filtros avanzados en consultas.  
-RF39: El sistema permitirá ordenar la información mostrada.  
-RF40: El sistema permitirá registrar la fecha y hora de inicio y fin de cada atención médica.  
+- RF1: El sistema permitirá registrar pacientes con información completa y validada.  
+- RF2: El sistema permitirá actualizar los datos personales del paciente.
+- RF3: El sistema permitirá eliminar registros de pacientes bajo condiciones controladas.  
+- RF4: El sistema permitirá realizar búsquedas de pacientes mediante DNI u otros criterios.
+- RF5: El sistema permitirá registrar médicos en la plataforma.  
+- RF6: El sistema permitirá asignar especialidades a cada médico.  
+- RF7: El sistema permitirá crear historias clínicas por paciente.
+- RF8: El sistema permitirá actualizar la información de la historia clínica.  
+- RF9: El sistema permitirá agendar citas médicas.  
+- RF10: El sistema permitirá reprogramar citas existentes.  
+- RF11: El sistema permitirá cancelar citas registradas.  
+- RF12: El sistema permitirá registrar procesos de hospitalización.  
+- RF13: El sistema permitirá asignar camas disponibles a pacientes.  
+- RF14: El sistema permitirá transferir pacientes entre áreas o servicios.  
+- RF15: El sistema permitirá registrar el alta médica del paciente.  
+- RF16: El sistema permitirá generar reportes operativos.  
+- RF17: El sistema permitirá exportar o imprimir listados.  
+- RF18: El sistema permitirá administrar usuarios del sistema.  
+- RF19: El sistema permitirá autenticación mediante inicio de sesión seguro.  
+- RF20: El sistema permitirá cambiar la contraseña de usuario.  
+- RF21: El sistema permitirá registrar actividades para auditoría.  
+- RF22: El sistema permitirá gestionar roles y permisos.  
+- RF23: El sistema permitirá exportar información en diferentes formatos.  
+- RF24: El sistema permitirá importar datos al sistema.  
+- RF25: El sistema permitirá enviar notificaciones a usuarios.  
+- RF26: El sistema permitirá generar alertas médicas relevantes.  
+- RF27: El sistema permitirá consultar el historial completo del paciente.  
+- RF28: El sistema mostrará un panel (dashboard) con información resumida.  
+- RF29: El sistema permitirá visualizar estadísticas del sistema.  
+- RF30: El sistema realizará gestionar el estado de las citas médicas
+- RF31: El sistema permitirá restaurar información desde backups.  
+- RF32: El sistema permitirá gestionar sesiones activas de usuarios.  
+- RF33: El sistema permitirá registrar diagnósticos asociados a cada historia clínica del paciente.
+- RF34: El sistema validará los datos ingresados por el usuario.  
+- RF35: El sistema manejará errores de forma controlada.  
+- RF36: El sistema permitirá validar la disponibilidad de médicos.
+- RF37: El sistema permitirá accesos rápidos a funciones frecuentes.  
+- RF38: El sistema permitirá aplicar filtros avanzados en consultas.  
+- RF39: El sistema permitirá ordenar la información mostrada.  
+- RF40: El sistema permitirá registrar la fecha y hora de inicio y fin de cada atención médica.  
 
 ---
 
