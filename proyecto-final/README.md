@@ -144,7 +144,26 @@ RNF6: Escalabilidad: Poder complementar con sistemas de terceros y mejor la inte
 
 ## 👤 - Redactar historias de usuario
 
-HU1: Como personal administrativo, quiero que el sistema valide el DNI, los campos obligatorios y el correo electrónico del paciente, para evitar registros incorrectos y permitir el envío de notificaciones importantes.
+HU1: Como usuario, quiero iniciar sesión con mi usuario y contraseña, para acceder de forma segura al sistema.
+Criterios de aceptación:
+*El sistema deberá solicitar usuario y contraseña obligatoriamente.
+*Solo se permitirá el acceso con credenciales válidas.
+*El sistema deberá mostrar un mensaje si los datos ingresados son incorrectos.
+*Al iniciar sesión correctamente, el sistema mostrará el menú principal.
+
+HU2: Como administrador, quiero gestionar usuarios para garantizar la seguridad.  
+Criterios de aceptación:
+* El administrador deberá poder registrar nuevos usuarios.
+* El sistema deberá permitir asignar roles.
+* El administrador podrá desactivar usuarios existentes.
+
+HU3: Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
+Criterios de aceptación:
+* El usuario deberá ingresar su contraseña actual.
+* La nueva contraseña deberá guardarse correctamente.
+* El sistema mostrará confirmación del cambio realizado.
+
+HU4: Como personal administrativo, quiero que el sistema valide el DNI, los campos obligatorios y el correo electrónico del paciente, para evitar registros incorrectos y permitir el envío de notificaciones importantes.
 Criterios de aceptación:
 * El sistema deberá solicitar nombre, DNI, edad y correo electrónico de forma obligatoria.
 * No se permitirá registrar pacientes con DNI repetido.
@@ -152,75 +171,49 @@ Criterios de aceptación:
 * El sistema mostrará un mensaje confirmando el registro exitoso.
 * El sistema deberá guardar el correo electrónico para futuras notificaciones.
 
-HU2: Como médico, quiero acceder al historial clínico para mejorar el diagnóstico.  
-Criterios de aceptación:
-* El médico deberá poder buscar pacientes por DNI o nombre.
-* El sistema deberá mostrar el historial clínico registrado.
-* Solo usuarios autorizados podrán acceder a esta información.
-
-HU3: Como administrador, quiero gestionar usuarios para garantizar la seguridad.  
-Criterios de aceptación:
-* El administrador deberá poder registrar nuevos usuarios.
-* El sistema deberá permitir asignar roles.
-* El administrador podrá desactivar usuarios existentes.
-
-HU4: Como personal administrativo, quiero que el estado de las camas se actualice automáticamente al registrar el alta médica, para mantener la disponibilidad de camas actualizada.
-
-HU5: Como usuario, quiero cambiar mi contraseña para proteger mi acceso.  
-Criterios de aceptación:
-* El usuario deberá ingresar su contraseña actual.
-* La nueva contraseña deberá guardarse correctamente.
-* El sistema mostrará confirmación del cambio realizado.
-
-HU6: Como personal administrativo, quiero agendar, reprogramar o cancelar citas médicas para organizar la atención de los pacientes.  
-Criterios de aceptación:
-* El sistema deberá permitir registrar una cita con fecha y médico.
-* El usuario podrá modificar la fecha de una cita existente.
-* El sistema deberá permitir cancelar citas registradas.
-
-HU7: Como médico, quiero registrar diagnósticos y tratamientos detallados para hacer seguimiento de la evolución del paciente.  
-
-HU8: Como administrador, quiero visualizar reportes operativos para tomar decisiones informadas sobre la gestión del hospital.  
-
-HU9: Como personal administrativo, quiero buscar pacientes por DNI o nombre, para agilizar la atención y evitar registros duplicados.
+HU5: Como personal administrativo, quiero buscar pacientes por DNI o nombre, para agilizar la atención y evitar registros duplicados.
 Criterios de aceptación:
 * El sistema deberá permitir búsquedas por DNI.
 * El sistema deberá permitir búsquedas por nombre.
 * Si no existe el paciente, deberá mostrarse un mensaje informativo.
 
-HU10: Como médico, quiero asignar una especialidad a mi perfil, para que el sistema me asigne citas acordes a mi área médica.
+HU6: Como administrador, quiero asignar una especialidad al perfil del médico, para organizar correctamente la atención médica.
 Criterios de aceptación:
 * El sistema deberá permitir seleccionar una especialidad.
 * La especialidad deberá quedar registrada en el perfil.
 * El médico podrá visualizar su especialidad asignada.
 
-HU11: Como personal administrativo, quiero registrar y asignar una cama específica a un paciente hospitalizado, para llevar un control exacto de la ocupación en tiempo real.
-
-HU12: Como médico, quiero registrar el alta médica del paciente, para que el sistema genere automáticamente el resumen de salida y libere los recursos.
+HU7: Como personal administrativo, quiero agendar, reprogramar o cancelar citas médicas para organizar la atención de los pacientes.  
 Criterios de aceptación:
-* El médico deberá poder registrar el alta médica del paciente.
-* El sistema deberá actualizar el estado del paciente.
-* El sistema deberá guardar la fecha y el diagnóstico final del paciente.
+* El sistema deberá permitir registrar una cita con fecha y médico.
+* El usuario podrá modificar la fecha de una cita existente.
+* El sistema deberá permitir cancelar citas registradas.
 
-HU13: Como personal de enfermería, quiero registrar la transferencia de un paciente entre áreas (ej. de Emergencia a UCI), para que su ubicación física siempre sea exacta en el sistema.
+HU8: Como médico, quiero acceder al historial clínico para mejorar el diagnóstico.  
+Criterios de aceptación:
+* El médico deberá poder seleccionar un paciente registrado.
+* El sistema deberá mostrar el historial clínico registrado.
+* Solo usuarios autorizados podrán acceder a esta información.
 
-HU14: Como administrador, quiero exportar reportes operativos en formato PDF o Excel, para compartirlos con la gerencia del hospital.
-
-HU15: Como auditor, quiero visualizar un registro de actividades (logs), para rastrear qué usuario realizó cambios o eliminaciones en datos sensibles.
-
-HU16: Como administrador, quiero definir roles y permisos (médico, administrativo, enfermería), para que cada usuario acceda únicamente a las funciones que le corresponden.
-
-HU17: Como médico, quiero recibir alertas visuales sobre alergias o diagnósticos críticos al abrir una historia clínica, para evitar errores en la medicación.
-
-HU18: Como director del hospital, quiero visualizar un Dashboard con estadísticas de citas y ocupación de camas, para tomar decisiones estratégicas basadas en datos.
-
-HU19: Como personal de soporte, quiero realizar y restaurar copias de seguridad (backups), para garantizar que la información no se pierda ante fallos técnicos.
-
-HU20: Como médico, quiero registrar la fecha y hora exacta de inicio y fin de cada atención, para medir los tiempos de espera y mejorar la eficiencia del servicio.
+HU9: Como médico, quiero registrar la fecha y hora exacta de inicio y fin de cada atención, para medir los tiempos de espera y mejorar la eficiencia del servicio.
 Criterios de aceptación:
 * El sistema deberá permitir registrar la hora de inicio y fin de atención.
 * La información deberá guardarse correctamente en el historial.
 * El sistema deberá mostrar la duración total de la atención.
+
+HU10: Como médico, quiero registrar el alta médica del paciente, para que el sistema genere automáticamente el resumen de salida y libere los recursos.
+Criterios de aceptación:
+* El médico deberá poder registrar el alta médica del paciente.
+* El sistema deberá actualizar el estado del paciente.
+* El sistema deberá generar un resumen básico de salida del paciente.
+* El sistema deberá guardar la fecha y el diagnóstico final del paciente.
+
+HU11: Como paciente, quiero recibir notificaciones en mi correo electrónico sobre mis citas médicas, para estar informado de mis registros, cambios o cancelaciones realizadas.
+Criterios de aceptación:
+* El sistema deberá utilizar el correo electrónico registrado del paciente.
+* El sistema deberá enviar una notificación al registrar una nueva cita.
+* El sistema deberá enviar una notificación cuando una cita sea reprogramada o cancelada.
+* El sistema deberá mostrar un mensaje confirmando el envío de la notificación.
 
 ---
 
