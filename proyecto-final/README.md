@@ -133,12 +133,12 @@ Desarrollar un sistema de gestión hospitalaria que permita automatizar los proc
 
 ### 🛡️ Requerimientos No Funcionales (RNF)
 
-RNF1: Seguridad: Implementación de **RBAC** (Control de Acceso Basado en Roles) y cumplimiento con la **Ley N° 29733** de Protección de Datos Personales.  
-RNF2: Integridad: Se garantizará la consistencia de los datos.  
-RNF3: Usabilidad: Interfaz intuitiva con operaciones rápidas.  
-RNF4: Disponibilidad: El sistema debe garantizar un **99.5% de tiempo de actividad** (Uptime) durante el horario operativo del hospital.  
-RNF5: Rendimiento: El tiempo de respuesta para consultas de búsqueda de pacientes no debe exceder los **2 segundos**.  
-RNF6: Escalabilidad: Poder complementar con sistemas de terceros y mejor la interconectividad.
+- RNF1: Seguridad: Implementación de **RBAC** (Control de Acceso Basado en Roles) y cumplimiento con la **Ley N° 29733** de Protección de Datos Personales.  
+- RNF2: Integridad: Se garantizará la consistencia de los datos.  
+- RNF3: Usabilidad: Interfaz intuitiva con operaciones rápidas.  
+- RNF4: Disponibilidad: El sistema debe garantizar un **99.5% de tiempo de actividad** (Uptime) durante el horario operativo del hospital.  
+- RNF5: Rendimiento: El tiempo de respuesta para consultas de búsqueda de pacientes no debe exceder los **2 segundos**.  
+- RNF6: Escalabilidad: Poder complementar con sistemas de terceros y mejor la interconectividad.
 
 ---
 
