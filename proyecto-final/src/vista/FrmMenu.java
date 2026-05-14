@@ -112,6 +112,11 @@ public class FrmMenu extends JFrame {
 		btnMenuMedicos.setHorizontalTextPosition(SwingConstants.CENTER);
 		btnMenuMedicos.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnMenuMedicos.setBounds(242, 106, 195, 142);
+		btnMenuMedicos.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new FrmMedico().setVisible(true);
+			}
+		});
 		contentPane.add(btnMenuMedicos);
 		
 		JButton btnMenuHistorial = new JButton("HISTORIAL CLINICO");
@@ -134,6 +139,11 @@ public class FrmMenu extends JFrame {
 		btnMenuReportes.setVerticalTextPosition(SwingConstants.BOTTOM);
 		btnMenuReportes.setFont(new Font("Arial", Font.BOLD, 16));
 		btnMenuReportes.setBounds(447, 106, 195, 142);
+		btnMenuReportes.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new FrmReporte().setVisible(true);
+			}
+		});
 		contentPane.add(btnMenuReportes);
 		
 		JLabel lblMenuUsuario = new JLabel("");
