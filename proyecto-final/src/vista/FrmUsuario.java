@@ -110,7 +110,7 @@ public class FrmUsuario extends JFrame {
         String password = txtPassword.getText().trim();
 
         String rol = cboRol.getSelectedItem().toString();
-
+        
         if (usuario.isEmpty() || password.isEmpty()) {
 
             JOptionPane.showMessageDialog(null, "Complete todos los campos");
