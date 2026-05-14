@@ -151,13 +151,14 @@ public class FrmMenu extends JFrame {
 		contentPane.add(lblMenuUsuario);
 		lblMenuUsuario.setText("¡Hola, " + usuario + "! - Rol:" + rol);
 		
-		JButton btnNewButton = new JButton("🔑 Cambiar clave");
-		btnNewButton.addActionListener(new ActionListener() {
+		JButton btnMenuCambiarClave = new JButton("🔑 Cambiar clave");
+		btnMenuCambiarClave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				new FrmCambioClave().setVisible(true);
 			}
 		});
-		btnNewButton.setBounds(757, 11, 130, 23);
-		contentPane.add(btnNewButton);
+		btnMenuCambiarClave.setBounds(757, 11, 130, 23);
+		contentPane.add(btnMenuCambiarClave);
 		
 		JButton btnMenuAdminSys = new JButton("ADMIN USUARIOS");
 		btnMenuAdminSys.addActionListener(new ActionListener() {

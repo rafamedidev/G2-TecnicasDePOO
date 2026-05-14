@@ -121,6 +121,9 @@ public class FrmLogin extends JFrame {
 		txtContra = new JPasswordField();
 		txtContra.setBounds(276, 101, 86, 20);
 		contentPane.add(txtContra);
+		
+		// Action para presionar boton btnIngresar con la tecla enter
+		getRootPane().setDefaultButton(btnIngresar);
 
 	}
 }
