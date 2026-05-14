@@ -7,13 +7,16 @@ public class Usuario {
     private String username;
     private String password;
     private String rol;
+    private boolean activo;
 
     // Constructor
-    public Usuario(int id, String username, String password, String rol) {
+    public Usuario(int id, String username, String password, String rol, boolean activo) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.rol = rol;
+        this.activo = activo;
+        
     }
 
     public boolean cambiarContraseña(String newPass) {
@@ -24,6 +27,10 @@ public class Usuario {
         return false;
     }
 
+    public void desactivar() {
+        this.activo = false;
+    }
+    
     // Getters y Setters
 	public int getId() {
 		return id;
@@ -56,4 +63,12 @@ public class Usuario {
 	public void setRol(String rol) {
 		this.rol = rol;
 	}    
+	
+	public boolean isActivo() {
+	    return activo;
+	}
+
+public void setActivo(boolean activo) {
+	    this.activo = activo;
+	}
 }
