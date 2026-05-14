@@ -42,7 +42,7 @@ public class FrmCita extends JFrame {
 	public FrmCita() {
 		controlador = new CitaController();
 		setTitle("Panel de Control - Citas Médicas");
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setBounds(100, 100, 600, 500); // Ventana más grande para la tabla
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));

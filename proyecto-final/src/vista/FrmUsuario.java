@@ -21,7 +21,7 @@ public class FrmUsuario extends JFrame {
 		setTitle("Gestión de Usuarios");
 		setSize(450,300);
 		setLocationRelativeTo(null);
-		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
 		contentPane = new JPanel();
 		contentPane.setLayout(null);

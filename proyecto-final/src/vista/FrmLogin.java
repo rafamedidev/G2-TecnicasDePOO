@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import dao.UsuarioDAO;
+import modelo.Usuario;
 
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -72,10 +73,13 @@ public class FrmLogin extends JFrame {
 				// 2. Llamar al DAO para validar
 				UsuarioDAO dao = new UsuarioDAO();
 
-				if (dao.login(user, pass)) {
+				//if (dao.login(user, pass)) {
+				Usuario usuarioLogueado = dao.login(user, pass);
+				if (usuarioLogueado!=null) {
 				    javax.swing.JOptionPane.showMessageDialog(null, "¡Bienvenido al Sistema!");
 				    // Aquí podrías abrir la siguiente ventana más adelante
-				    new FrmCita().setVisible(true); // Abre la ventana de Citas
+				    FrmMenu menu = new FrmMenu(usuarioLogueado.getUsername(),usuarioLogueado.getRol());
+				    menu.setVisible(true);
 				    FrmLogin.this.dispose();
 				    
 				} else {
