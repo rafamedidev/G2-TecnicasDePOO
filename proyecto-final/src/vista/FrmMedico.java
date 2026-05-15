@@ -23,9 +23,10 @@ public class FrmMedico extends JFrame {
 
 
 	public FrmMedico() {
-
+		
 		setTitle("Asignar Especialidad");
 		setSize(450,300);
+		this.setLocationRelativeTo(null);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 

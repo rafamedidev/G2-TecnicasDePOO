@@ -47,10 +47,11 @@ public class FrmCambioClave extends JFrame {
 	 */
 	public FrmCambioClave(String usuario) {
 		this.usuarioLogeado=usuario;
-		
+
 		setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		setLocationRelativeTo(null);
 		setBounds(100, 100, 450, 300);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -123,6 +124,11 @@ public class FrmCambioClave extends JFrame {
 		contentPane.add(btnGuardarNClave);
 		
 		JButton btnCancelarNClave = new JButton("Cancelar");
+		btnCancelarNClave.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				dispose();
+			}
+		});
 		btnCancelarNClave.setBounds(216, 170, 89, 23);
 		contentPane.add(btnCancelarNClave);
 		

@@ -27,12 +27,12 @@ public class FrmUsuario extends JFrame {
     private UsuarioDAO dao = new UsuarioDAO();
 
     public FrmUsuario() {
-
+    	this.setLocationRelativeTo(null);
         setTitle("Gestión de Usuarios");
 
         setSize(500, 330);
 
-        setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
 
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
@@ -49,7 +49,7 @@ public class FrmUsuario extends JFrame {
         lblTitulo.setFont(new Font("Arial", Font.BOLD, 22));
 
         lblTitulo.setBounds(0, 20, 500, 30);
-
+        
         contentPane.add(lblTitulo);
 
         JLabel lblUsuario = new JLabel("Usuario:");

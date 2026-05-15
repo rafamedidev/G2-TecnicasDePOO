@@ -22,10 +22,10 @@ public class FrmReporte extends JFrame {
     private ReporteDAO dao = new ReporteDAO();
 
     public FrmReporte() {
-
+    	
         setTitle("Reportes");
         setSize(650, 300);
-        setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 
         contentPane = new JPanel();

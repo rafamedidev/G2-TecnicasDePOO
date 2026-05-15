@@ -45,8 +45,10 @@ public class FrmLogin extends JFrame {
 	 * Create the frame.
 	 */
 	public FrmLogin() {
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 425, 227);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);

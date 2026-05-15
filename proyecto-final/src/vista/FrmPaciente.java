@@ -48,9 +48,11 @@ public class FrmPaciente extends JFrame {
     }
 
     public FrmPaciente() {
+    	
         setTitle("Gestión de Pacientes");
         setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         setBounds(100, 100, 950, 600);
+        this.setLocationRelativeTo(null);
         getContentPane().setLayout(null);
 
         JLabel lblTitulo = new JLabel("GESTIÓN DE PACIENTES");
