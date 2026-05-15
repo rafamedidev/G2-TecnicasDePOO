@@ -69,4 +69,19 @@ public class UsuarioDAO {
             return false;
         }
     }
+    public boolean actualizarPassword(String usuario, String nuevaPassword) {
+        String sql = "UPDATE usuarios SET password = ? WHERE usuario = ?";
+        try {
+            Connection cn = Conexion.conectar();
+            PreparedStatement pst = cn.prepareStatement(sql);
+            pst.setString(1, nuevaPassword);
+            pst.setString(2, usuario);
+            
+            int resultado = pst.executeUpdate();
+            return resultado > 0;
+        } catch (Exception e) {
+            System.out.println("Error al actualizar contraseña: " + e.getMessage());
+            return false;
+        }
+    }
 }

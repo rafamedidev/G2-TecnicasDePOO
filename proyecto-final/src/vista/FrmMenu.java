@@ -154,7 +154,7 @@ public class FrmMenu extends JFrame {
 		JButton btnMenuCambiarClave = new JButton("🔑 Cambiar clave");
 		btnMenuCambiarClave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				new FrmCambioClave().setVisible(true);
+				new FrmCambioClave(usuarioActual).setVisible(true);
 			}
 		});
 		btnMenuCambiarClave.setBounds(757, 11, 130, 23);
