@@ -6,13 +6,17 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.SwingConstants;
 import java.awt.Font;
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.SystemColor;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 
 
@@ -57,62 +61,58 @@ public class FrmMenu extends JFrame {
 		this.rolActual=rol;
 		
 		setBackground(SystemColor.activeCaption);
-		setTitle("Menu Principal");
+		setTitle("Menú Principal - Gestión Hospitalaria");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 913, 554);
 		this.setLocationRelativeTo(null);
+		
 		contentPane = new JPanel();
-		contentPane.setBackground(Color.WHITE);
-		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
-		setContentPane(contentPane);
-		contentPane.setLayout(null);
+	    contentPane.setBackground(new Color(245, 247, 250)); // Fondo neutro profesional
+	    contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+	    setContentPane(contentPane);
+	    contentPane.setLayout(null);
+	    
+	    // --- CABECERA ---
+	    JPanel header = new JPanel();
+	    header.setBackground(Color.WHITE);
+	    header.setBounds(0, 0, 950, 80);
+	    header.setLayout(null);
+	    header.setBorder(BorderFactory.createMatteBorder(0, 0, 1, 0, new Color(220, 220, 220)));
+	    contentPane.add(header);
 		
-		JLabel lblTitulo = new JLabel("SISTEMA DE GESTION HOSPITALARIA");
-		lblTitulo.setFont(new Font("Arial Black", Font.BOLD, 25));
-		lblTitulo.setHorizontalAlignment(SwingConstants.CENTER);
-		lblTitulo.setBounds(10, 42, 887, 36);
-		contentPane.add(lblTitulo);
+	    // VENTANA PRINCIPAL
+	    JLabel lblTitulo = new JLabel("SISTEMA DE GESTION HOSPITALARIA");
+	    lblTitulo.setForeground(new Color(26, 35, 126)); // Azul Indigo médico
+	    lblTitulo.setFont(new Font("Segoe UI", Font.BOLD, 24));
+	    lblTitulo.setBounds(20, 20, 500, 40);
+	    header.add(lblTitulo);
 		
+	    // - BOTON FORMULARIO CITAS
 		JButton btnMenuCitas = new JButton("CITAS");
 		btnMenuCitas.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmCita().setVisible(true); // Abre la ventana de Cita
 			}
 		});
-		btnMenuCitas.setForeground(Color.BLACK);
-		btnMenuCitas.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/cita-medica.png")));
-		btnMenuCitas.setFont(new Font("Arial", Font.BOLD, 16));
-		btnMenuCitas.setHorizontalAlignment(SwingConstants.CENTER);
-		btnMenuCitas.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnMenuCitas.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnMenuCitas.setBounds(37, 106, 195, 142);
+		estilizarBoton(btnMenuCitas, "/images/cita-medica.png");
+		btnMenuCitas.setBounds(37, 130, 200, 160);
 		contentPane.add(btnMenuCitas);
 		
+		// - BOTON FORMULARIO PACIENTES
 		JButton btnMenuPacientes = new JButton("PACIENTES");
-		btnMenuPacientes.setForeground(Color.BLACK);
-		btnMenuPacientes.setSelectedIcon(new ImageIcon(FrmMenu.class.getResource("/images/key1.png")));
-		btnMenuPacientes.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/pacientes.png")));
-		btnMenuPacientes.setFont(new Font("Arial", Font.BOLD, 16));
-		btnMenuPacientes.setHorizontalAlignment(SwingConstants.CENTER);
-		btnMenuPacientes.setVerticalAlignment(SwingConstants.CENTER);
-		btnMenuPacientes.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnMenuPacientes.setVerticalTextPosition(SwingConstants.BOTTOM);
+		estilizarBoton(btnMenuPacientes, "/images/pacientes.png");
+	    btnMenuPacientes.setBounds(37, 310, 200, 160);
 		btnMenuPacientes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmPaciente().setVisible(true);
 			}
 		});
-		btnMenuPacientes.setBounds(37, 254, 195, 142);
 		contentPane.add(btnMenuPacientes);
 		
+		// BOTON FORMULARIO MEDICOS
 		JButton btnMenuMedicos = new JButton("MEDICOS");
-		btnMenuMedicos.setForeground(Color.BLACK);
-		btnMenuMedicos.setFont(new Font("Arial", Font.BOLD, 16));
-		btnMenuMedicos.setHorizontalAlignment(SwingConstants.CENTER);
-		btnMenuMedicos.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/doctor.png")));
-		btnMenuMedicos.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnMenuMedicos.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnMenuMedicos.setBounds(242, 106, 195, 142);
+		estilizarBoton(btnMenuMedicos, "/images/doctor.png");
+	    btnMenuMedicos.setBounds(257, 130, 200, 160);
 		btnMenuMedicos.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmMedico().setVisible(true);
@@ -120,26 +120,16 @@ public class FrmMenu extends JFrame {
 		});
 		contentPane.add(btnMenuMedicos);
 		
+		// BOTON FORMULARIO HISTORIAL CLINICO
 		JButton btnMenuHistorial = new JButton("HISTORIAL CLINICO");
-		btnMenuHistorial.setForeground(Color.BLACK);
-		btnMenuHistorial.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/historialclinico.png")));
-		btnMenuHistorial.setHorizontalAlignment(SwingConstants.CENTER);
-		btnMenuHistorial.setVerticalAlignment(SwingConstants.CENTER);
-		btnMenuHistorial.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnMenuHistorial.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnMenuHistorial.setFont(new Font("Arial", Font.BOLD, 16));
-		btnMenuHistorial.setBounds(242, 254, 195, 142);
-		contentPane.add(btnMenuHistorial);
+		estilizarBoton(btnMenuHistorial, "/images/historialclinico.png");
+	    btnMenuHistorial.setBounds(257, 310, 200, 160);
+	    contentPane.add(btnMenuHistorial);
 		
+	    // BOTON FORMULARIO REPORTES
 		JButton btnMenuReportes = new JButton("REPORTES");
-		btnMenuReportes.setForeground(Color.BLACK);
-		btnMenuReportes.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/reporte.png")));
-		btnMenuReportes.setHorizontalAlignment(SwingConstants.CENTER);
-		btnMenuReportes.setVerticalAlignment(SwingConstants.CENTER);
-		btnMenuReportes.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnMenuReportes.setVerticalTextPosition(SwingConstants.BOTTOM);
-		btnMenuReportes.setFont(new Font("Arial", Font.BOLD, 16));
-		btnMenuReportes.setBounds(447, 106, 195, 142);
+		estilizarBoton(btnMenuReportes, "/images/reporte.png");
+	    btnMenuReportes.setBounds(477, 130, 200, 160);
 		btnMenuReportes.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmReporte().setVisible(true);
@@ -147,35 +137,125 @@ public class FrmMenu extends JFrame {
 		});
 		contentPane.add(btnMenuReportes);
 		
+		// LABEL PARA MOSTRAR USUARIO CON SESION INICIADA Y ROL
 		JLabel lblMenuUsuario = new JLabel("");
-		lblMenuUsuario.setBounds(37, 89, 300, 14);
+		lblMenuUsuario.setFont(new Font("Segoe UI", Font.ITALIC, 13));
+	    lblMenuUsuario.setForeground(new Color(100, 116, 139));
+	    lblMenuUsuario.setBounds(37, 95, 400, 20);
 		contentPane.add(lblMenuUsuario);
-		lblMenuUsuario.setText("¡Hola, " + usuario + "! - Rol:" + rol);
+		lblMenuUsuario.setText("¡Hola, " + usuario + "! - Rol: " + rol);
 		
-		JButton btnMenuCambiarClave = new JButton("🔑 Cambiar clave");
+		// BOTON CAMBIAR CLAVE
+		JButton btnMenuCambiarClave = new JButton("");
+		btnMenuCambiarClave.setToolTipText("Cambiar contraseña");
+		btnMenuCambiarClave.setFocusPainted(false);
+		btnMenuCambiarClave.setBorderPainted(false);
+		btnMenuCambiarClave.setContentAreaFilled(false); // Lo hacemos transparente inicialmente
+		btnMenuCambiarClave.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		btnMenuCambiarClave.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		btnMenuCambiarClave.setForeground(new Color(71, 85, 105));
+		btnMenuCambiarClave.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/keyChange.png")));
+		btnMenuCambiarClave.setBounds(753, 20, 63, 49);
+		btnMenuCambiarClave.setHorizontalAlignment(SwingConstants.RIGHT);
+		// Efecto Hover para que el usuario sepa que es clickeable
+		btnMenuCambiarClave.addMouseListener(new java.awt.event.MouseAdapter() {
+		    public void mouseEntered(java.awt.event.MouseEvent evt) {
+		        btnMenuCambiarClave.setForeground(new Color(37, 99, 235)); // Azul brillante al pasar el mouse
+		    }
+		    public void mouseExited(java.awt.event.MouseEvent evt) {
+		        btnMenuCambiarClave.setForeground(new Color(71, 85, 105)); // Vuelve al color original
+		    }
+		});
 		btnMenuCambiarClave.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmCambioClave(usuarioActual).setVisible(true);
 			}
 		});
-		btnMenuCambiarClave.setBounds(757, 11, 130, 23);
-		contentPane.add(btnMenuCambiarClave);
+		header.add(btnMenuCambiarClave);
 		
-		JButton btnMenuAdminSys = new JButton("ADMIN USUARIOS");
+		JButton btnCerrarSesion = new JButton("");
+		btnCerrarSesion.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				int confirm = JOptionPane.showConfirmDialog(null, 
+			            "¿Estás seguro de que deseas cerrar sesión?", "Cerrar Sesión", 
+			            JOptionPane.YES_NO_OPTION, JOptionPane.QUESTION_MESSAGE);
+			            
+			        if (confirm == JOptionPane.YES_OPTION) {
+			            ejecutarCerrarSesion();
+			        }
+			}
+		});
+		btnCerrarSesion.setToolTipText("Cerrar Sesion");
+		btnCerrarSesion.setBounds(820, 20, 72, 49);
+		btnCerrarSesion.setFocusPainted(false);
+		btnCerrarSesion.setBorderPainted(false);
+		btnCerrarSesion.setContentAreaFilled(false); // Lo hacemos transparente inicialmente
+		btnCerrarSesion.setCursor(new Cursor(Cursor.HAND_CURSOR));
+		btnCerrarSesion.setFont(new Font("Segoe UI", Font.PLAIN, 13));
+		btnCerrarSesion.setForeground(new Color(71, 85, 105));
+		btnCerrarSesion.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/cerrar-sesion.png")));
+		header.add(btnCerrarSesion);
+		
+		// BOTON DE ADMIN
+		JButton btnMenuAdminSys = new JButton("ADMIN SISTEMA");
+		estilizarBoton(btnMenuAdminSys, "/images/system-administrator.png");
+	    btnMenuAdminSys.setBackground(new Color(45, 52, 54)); // Gris muy oscuro
+	    btnMenuAdminSys.setForeground(Color.GRAY);
+	    btnMenuAdminSys.setBounds(700, 310, 200, 160);
 		btnMenuAdminSys.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				new FrmUsuario().setVisible(true);
 			}
 		});
-		btnMenuAdminSys.setVerticalTextPosition(SwingConstants.TOP);
-		btnMenuAdminSys.setVerticalAlignment(SwingConstants.CENTER);
-		btnMenuAdminSys.setIcon(new ImageIcon(FrmMenu.class.getResource("/images/system-administrator.png")));
-		btnMenuAdminSys.setHorizontalTextPosition(SwingConstants.CENTER);
-		btnMenuAdminSys.setHorizontalAlignment(SwingConstants.CENTER);
-		btnMenuAdminSys.setForeground(Color.BLACK);
-		btnMenuAdminSys.setFont(new Font("Arial", Font.BOLD, 12));
-		btnMenuAdminSys.setBounds(718, 354, 169, 150);
 		contentPane.add(btnMenuAdminSys);
 
+	}
+	private void estilizarBoton(JButton btn, String iconPath) {
+	    btn.setFont(new Font("Segoe UI", Font.BOLD, 14));
+	    btn.setBackground(Color.WHITE);
+	    btn.setForeground(new Color(51, 51, 51));
+	    btn.setFocusPainted(false);
+	    btn.setVerticalTextPosition(SwingConstants.BOTTOM);
+	    btn.setHorizontalTextPosition(SwingConstants.CENTER);
+	    
+	    // Borde suave redondeado (simulado con LineBorder)
+	    btn.setBorder(BorderFactory.createCompoundBorder(
+	        BorderFactory.createLineBorder(new Color(230, 230, 230), 1),
+	        BorderFactory.createEmptyBorder(10, 10, 10, 10)
+	    ));
+	    
+	    try {
+	        btn.setIcon(new ImageIcon(FrmMenu.class.getResource(iconPath)));
+	    } catch(Exception e) {
+	        System.out.println("No se pudo cargar: " + iconPath);
+	    }
+
+	    // Efecto Hover nativo
+	    btn.addMouseListener(new java.awt.event.MouseAdapter() {
+	        public void mouseEntered(java.awt.event.MouseEvent evt) {
+	            btn.setBackground(new Color(232, 240, 254)); // Celeste muy claro al pasar el mouse
+	        }
+	        public void mouseExited(java.awt.event.MouseEvent evt) {
+	            btn.setBackground(Color.WHITE);
+	        }
+	    });
+	}
+	private void ejecutarCerrarSesion() {
+	    this.dispose(); 
+	    this.usuarioActual = null;
+	    this.rolActual = null;
+	    
+	    // Abre el login de nuevo
+	    // Como el login suele ser la puerta de entrada, lo llamamos directamente
+	    EventQueue.invokeLater(new Runnable() {
+	        public void run() {
+	            try {
+	                FrmLogin login = new FrmLogin();
+	                login.setVisible(true);
+	            } catch (Exception e) {
+	                e.printStackTrace();
+	            }
+	        }
+	    });
 	}
 }
