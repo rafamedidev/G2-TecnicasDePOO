@@ -122,6 +122,11 @@ public class FrmMenu extends JFrame {
 		
 		// BOTON FORMULARIO HISTORIAL CLINICO
 		JButton btnMenuHistorial = new JButton("HISTORIAL CLINICO");
+		btnMenuHistorial.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				new FrmHistoriaClinica().setVisible(true);
+			}
+		});
 		estilizarBoton(btnMenuHistorial, "/images/historialclinico.png");
 	    btnMenuHistorial.setBounds(257, 310, 200, 160);
 	    contentPane.add(btnMenuHistorial);
