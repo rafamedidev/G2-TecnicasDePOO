@@ -13,7 +13,7 @@ public class Conexion {
     private static String user = "root";
 
     // TU CONTRASEÑA REAL DE MYSQL
-    private static String pass = "root";
+    private static String pass = "admin123";
 
     public static Connection conectar() {
 
