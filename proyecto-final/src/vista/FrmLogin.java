@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
 
 import dao.UsuarioDAO;
+import modelo.Usuario;
 
 import javax.swing.JLabel;
 import java.awt.Font;
@@ -44,8 +45,10 @@ public class FrmLogin extends JFrame {
 	 * Create the frame.
 	 */
 	public FrmLogin() {
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 425, 227);
+		this.setLocationRelativeTo(null);
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
@@ -72,10 +75,13 @@ public class FrmLogin extends JFrame {
 				// 2. Llamar al DAO para validar
 				UsuarioDAO dao = new UsuarioDAO();
 
-				if (dao.login(user, pass)) {
+				//if (dao.login(user, pass)) {
+				Usuario usuarioLogueado = dao.login(user, pass);
+				if (usuarioLogueado!=null) {
 				    javax.swing.JOptionPane.showMessageDialog(null, "¡Bienvenido al Sistema!");
 				    // Aquí podrías abrir la siguiente ventana más adelante
-				    new FrmCita().setVisible(true); // Abre la ventana de Citas
+				    FrmMenu menu = new FrmMenu(usuarioLogueado.getUsername(),usuarioLogueado.getRol());
+				    menu.setVisible(true);
 				    FrmLogin.this.dispose();
 				    
 				} else {
@@ -117,6 +123,9 @@ public class FrmLogin extends JFrame {
 		txtContra = new JPasswordField();
 		txtContra.setBounds(276, 101, 86, 20);
 		contentPane.add(txtContra);
+		
+		// Action para presionar boton btnIngresar con la tecla enter
+		getRootPane().setDefaultButton(btnIngresar);
 
 	}
 }
