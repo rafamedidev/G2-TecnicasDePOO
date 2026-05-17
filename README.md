@@ -19,7 +19,7 @@ Repositorio del grupo 2 para el curso de Técnicas de Programación Orientada a 
 - `taller2_semana3y4`
   - Temas: Presentación de avances sobre el desarrollo de proyecto, identificacion de problema y consecuencias, analsiis de Ishikawa, documentación de antecedentes, RF, RNF, HU.
  
-- `taller2_semana5y6`
+- `taller3_semana5y6`
   - Temas: Presentación de avances sobre el desarrollo de proyecto, documentar criterios de aceptación de cada requerimiento, uso de Java los requerimientos declarados y personalizados en historias de usuario.
 
 ## 👥 Integrantes
